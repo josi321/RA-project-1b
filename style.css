@@ -31,7 +31,8 @@ section {
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 1rem 0;
+	padding-top: 1rem;
+	padding-bottom: 0.2rem;
 }
 
 .logo {
@@ -61,6 +62,7 @@ section {
 }
 
 .navbar {
+	margin-bottom: 0px !important;
 	align-self: center;
 	order: 2;
 	flex: 1 0 auto;
@@ -75,7 +77,7 @@ section {
 .navbar li {
 	display: inline-block;
 	text-transform: uppercase;
-	margin: auto;
+	/*margin: auto;*/
 }
 
 .navbar a {
@@ -86,3 +88,48 @@ section {
 /*.logo: nth-of-type(1) { order: 1; }
 .cart: nth-of-type(2) {order: 3; }
 .navbar: nth-of-type(3) {order: 2; }*/
+
+/*BANNER SECTION*/
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(rgba(0,0,0,0.5),transparent), 
+	url("assets/images/banner-girl.png") center bottom no-repeat,
+	url("assets/images/flower-bkgd.jpg") center repeat-x;
+	background-size: cover, /*110px 235px*/ 35% 85%, cover;
+	position: relative;
+	min-height: 45vh;
+}
+
+.banner-text {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	/*padding: 18% 0;*/
+}
+
+.banner-h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+}
+
+.banner-h2 {
+	font-family: 'Playfair display', serif;
+	font-size: 3.6rem;
+	margin-top: 0px;
+	/*line-height: 2;*/
+}
+
+.text-shadow {
+	text-shadow: 0.04em 0.05em #656565;
+}
+
+.fontPD {
+	font-family: 'Playfair Display', serif;
+}
+
+.fontR {
+	font-family: 'Raleway', sans-serif;
+}
