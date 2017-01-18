@@ -1,3 +1,4 @@
+/*GENERAL STYLES*/
 * {
    box-sizing: border-box;
    outline: none;
@@ -16,13 +17,21 @@
 }
 
 section {
-   padding: 4rem 0;
+   padding: 3rem 0;
 }
 
-/*img {
-   height: auto;
-   max-width: 100%;
-}*/
+.text-shadow {
+	text-shadow: 0.04em 0.05em #656565;
+}
+
+.fontPD {
+	font-family: 'Playfair Display', serif;
+}
+
+.fontR {
+	font-family: 'Raleway', sans-serif;
+}
+
 
 /*HEADER*/
 
@@ -122,17 +131,7 @@ section {
 	/*line-height: 2;*/
 }
 
-.text-shadow {
-	text-shadow: 0.04em 0.05em #656565;
-}
-
-.fontPD {
-	font-family: 'Playfair Display', serif;
-}
-
-.fontR {
-	font-family: 'Raleway', sans-serif;
-}
+/*CTA SECTION*/
 
 .about {
 	display: flex;
@@ -166,3 +165,73 @@ span {
 	line-height: 250%;
 	font-style: normal;
 }
+
+/*CATEGORIES SECTION*/
+
+.category {
+	display: flex;
+    flex-wrap: wrap;
+   /* flex-direction: row;*/
+}
+
+.wide {
+    flex: 2 0 100%;
+    max-width: 100%;
+    border: 4px solid white;
+   /* position: relative;*/
+}
+
+.square {
+	flex: 1 0 50%;
+    max-width: 50%;
+    border: 4px solid white;
+   /* position: relative;*/
+}
+
+.category-name {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 2px 4px black;
+	font-size: 2rem;
+	min-height: 25vh;
+	text-align: center;
+	transform: translateY(50%);
+}
+.wide.mens {
+	background: linear-gradient(rgba(0,0,0,0.5),transparent),
+				url("images/mens-category.jpg") no-repeat center center;
+	background-size: cover;			
+}
+
+.square.trends {
+	background:linear-gradient(rgba(0,0,0,0.5),transparent),
+				url("images/trends-category.jpg") no-repeat center center;
+	background-size: cover;			
+}
+
+.square.glasses {
+	background:linear-gradient(rgba(0,0,0,0.5),transparent),
+				url("images/glasses-category.jpg") no-repeat center center;
+	background-size: cover;	
+}
+
+.square.sale {
+		background:linear-gradient(rgba(0,0,0,0.5),transparent),
+				url("images/sale-category.jpg") no-repeat center center;
+		background-size: cover;
+}
+
+.square.bags {
+		background:linear-gradient(rgba(0,0,0,0.5),transparent),
+				url("images/bags-category.jpg") no-repeat center center;
+		background-size: cover;
+}
+
+.wide.womens {
+		background:linear-gradient(rgba(0,0,0,0.5),transparent),
+				url("images/womens-category.jpg") no-repeat center center;
+		background-size: cover;
+}
+
