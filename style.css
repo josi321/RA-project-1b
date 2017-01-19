@@ -17,7 +17,7 @@
 }
 
 section {
-   padding: 2% 0;
+   padding: 2rem 0;
 }
 
 .text-shadow {
@@ -144,14 +144,12 @@ section {
 
 .h3-text {
 	font-size: 3.3rem;
-	/*line-height: 250%;*/
-	/*padding: 3%;*/
-	/*margin-bottom: 2%;*/
 	margin:3% 0;
 	font-style: italic;
 	font-weight: normal;
 	font-family: 'Playfair display', serif;
 	color: #404040;
+	text-align: center;
 }
 span {
 	font-style: normal;
@@ -164,6 +162,7 @@ span {
 	padding-top: 5%;
 	line-height: 250%;
 	font-style: normal;
+	text-align: center;
 }
 
 /*CATEGORIES SECTION*/
@@ -277,4 +276,125 @@ span {
    font-size: 1.2rem;
    font-weight: bold;
    font-family: 'Raleway', sans-serif;
+}
+
+/*SUBSCRIPTION SECTION*/
+
+.signup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-flow: row;
+	background: linear-gradient(rgba(0,0,0,0.3),transparent),
+		url("assets/images/wave-bkgd.jpg") center bottom no-repeat;
+	min-height: 42vh;
+	padding-bottom: 4rem;
+
+}
+
+.signup .h3-text {
+	color: white;
+	padding-bottom: 2rem;
+}
+
+.signup p {
+	color: white;
+	line-height: 2;
+	text-align: center;
+}
+
+.sub-Form {
+	padding: 0.3rem;
+	border-radius: 50px;
+	background-color: white;
+	width: 72%;
+	margin-top: 15px;
+	text-align: center;
+	display: inline-block;
+	transform: translate(18%);
+}
+
+
+.email {
+	border-radius: 10px;
+    padding: 5px 10px;
+    width: 65%;
+    min-height: 1.25rem;
+    float: left;
+    border: none;
+}
+
+.submitButton {
+	border-radius: 50px;
+    background-color: #ff4040;
+    width: 25%;
+    font-size: 1rem;
+    padding: 3%;
+    float: right;
+    color: white;	
+    border:none;
+}
+
+/*FOOTER SECTION*/
+.footer {
+	background-color: #262626;
+   color: white;
+   font-family: 'Playfair Display Web', serif;
+   /*padding: 4rem 0;*/
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   margin-top: 0.8%;
+   width: 100%;
+}
+.contactUs {
+	padding: 6% 0%;
+	display: block;
+	clear: both;
+	width: 100%;
+	font-size: 1.6rem;
+}
+
+.contact, .phone {
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.phone a{
+	color: white;
+	text-decoration: none;
+}
+.address {
+    text-align: center;
+    vertical-align: middle;
+    color: #9e9e9e;
+}
+.social {
+    margin: auto;
+    width: 75%;
+    float: right;
+    padding-right: 4rem;
+    line-height: 150%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social span {
+	display:none;
+}
+
+.social ul {
+   /* list-style: none;*/
+    display: flex;
+    text-align: center;
+    margin: auto;
+   /* padding: 0 33%;*/
+    font-family: 'Raleway', sans-serif;
+  font-weight: lighter
+}
+
+.social i {
+	padding: 0 2rem;
+	color: white;
+	font-size: 2rem;
 }
