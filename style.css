@@ -384,17 +384,20 @@ span {
 }
 
 .social ul {
-   /* list-style: none;*/
     display: flex;
-    text-align: center;
-    margin: auto;
-   /* padding: 0 33%;*/
+/*    text-align: center;
+    margin: auto;*/
     font-family: 'Raleway', sans-serif;
-  font-weight: lighter
+  font-weight: lighter;
+  align-items:center;
+  justify-content: center;
 }
 
 .social i {
-	padding: 0 2rem;
+	padding: 0 1rem;
 	color: white;
 	font-size: 2rem;
+	text-align: center;
+	align-self: center;
+	transform: translateX(-7vw);
 }
