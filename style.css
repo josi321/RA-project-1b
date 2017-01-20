@@ -237,7 +237,7 @@ span {
 
 /*PRODUCTS SECTION*/
 
-.popular-items{
+/*.popular-items{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -252,10 +252,11 @@ span {
 	justify-content: center;
 	align-self: center;
 	text-align: center;
-}
+}*/
 
 .item {
 	width: 100%;
+	text-align: center;
 }
 
 .item h4 {
