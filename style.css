@@ -279,6 +279,10 @@ span {
    font-family: 'Raleway', sans-serif;
 }
 
+.owl-theme .owl-nav [class*="owl-"] {
+	display: none !important;
+}
+
 /*SUBSCRIPTION SECTION*/
 
 .signup {
