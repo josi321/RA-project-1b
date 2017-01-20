@@ -15,5 +15,14 @@ $(document).ready(function(){
         }
     }
 })
+  $(".addtocart").on("click", function (){
+       var inputField = parseInt($("#cartQty").val()); // increaSE VALUE BY WHEN CLICK THE BUTTON
+           $("#cartQty").val(inputField + 1); 
+       })
+  $(".addtocart").click(function(){ //shows the input for cart quantities
+   $("#cartQty").show();
+})
+  
 });
 
+	

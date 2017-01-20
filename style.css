@@ -62,12 +62,14 @@ section {
 	/*width: 50%;*/
 	/*height: 50px;*/
 	flex: 0 1 50%;
+	position: relative;
 }
 
 .cart img {
 	max-width: 24%;
 	margin-left: 74%;
 	padding-bottom: 1rem;
+
 }
 
 .navbar {
@@ -92,6 +94,23 @@ section {
 .navbar a {
 	color: #ff4040;
 	padding: 0 1rem;
+}
+
+#cartQty {
+	display:;
+	background-color: red;
+	border-radius: 20px;
+	border:none;
+	color: white;
+	position: absolute;
+	top:-1px;
+	left:10px;
+	width:15px;
+	height: 15px;
+	padding-left:4.4px;
+	margin-left: 84%;
+	font-size: 1.1rem;
+
 }
 
 /*.logo: nth-of-type(1) { order: 1; }
@@ -281,6 +300,14 @@ span {
 
 .owl-theme .owl-nav [class*="owl-"] {
 	display: none !important;
+}
+
+.addtocart {
+	background-color: black;
+	color: white;
+	border-radius: 25px;
+	border:none;
+	width:90px;
 }
 
 /*SUBSCRIPTION SECTION*/
