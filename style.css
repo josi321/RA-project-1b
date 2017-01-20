@@ -49,6 +49,7 @@ section {
 	/*width: 35%;*/
 	/*height: 56px;*/
 	flex: 0 1 50%;
+	padding-left: 1rem;
 }
 
 .logo img {
@@ -169,6 +170,7 @@ section {
 	font-family: 'Playfair display', serif;
 	color: #404040;
 	text-align: center;
+	padding-bottom: 2rem;
 }
 span {
 	font-style: normal;
@@ -276,6 +278,7 @@ span {
 .item {
 	width: 100%;
 	text-align: center;
+	padding-bottom: 1.5rem;
 }
 
 .item h4 {
@@ -433,3 +436,95 @@ span {
 	align-self: center;
 	transform: translateX(-7vw);
 }
+/*TABLET RESPONSIVENESS*/
+@media only screen and (min-width: 601px) and (max-width: 1050px){
+.header {
+	flex-wrap: nowrap;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.logo img {
+    max-width: 74%;
+    padding: 1.5rem;
+}
+
+.navbar {padding-top:1rem;}
+
+.navbar ul {
+	border:none;
+	padding: 0;
+}
+.cart {order:3;}
+
+.cart img {
+    max-width: 22%;
+    margin-left: 67%;
+    padding-bottom: 1.5rem;
+}
+
+#cartQty {
+	top: 2px;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	padding-left: 5.5px;
+}
+
+.banner {
+	background-size: cover, 152px 86%, cover;
+    min-height: 35vh;
+}
+.banner-h2 {
+    font-size: 5.6rem;
+}
+
+.banner-h1 {
+    font-size: 1.7rem;
+}
+
+.h3-text {
+    font-size: 4rem;
+}
+
+.h3-text p {
+    font-size: 1.6rem;
+}
+
+.category-name {
+    font-size: 3rem;
+    transform: translateY(43%);
+}
+
+.owl-carousel {
+    padding: 2rem 0; 
+}   
+
+.signup .h3-text {
+    padding-bottom: 4rem;
+}
+
+.signup {min-height: 31vh;}
+
+.signup p {font-size: 1.7rem;}
+
+.email {
+    padding-top: 7px;
+    min-height: 2vh;
+    font-size: 1.5rem;
+}
+
+.submitButton {
+font-size: 1.3rem;
+padding: 1.5%;}
+
+
+
+}
+
+
+
+
+
