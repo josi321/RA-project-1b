@@ -82,6 +82,7 @@ img {
 	align-self: center;
 	order: 2;
 	flex: 1 0 auto;
+	font-size: 1.3rem;
 }
 
 .navbar ul{
@@ -118,9 +119,6 @@ img {
 
 }
 
-/*.logo: nth-of-type(1) { order: 1; }
-.cart: nth-of-type(2) {order: 3; }
-.navbar: nth-of-type(3) {order: 2; }*/
 
 /*BANNER SECTION*/
 
@@ -131,9 +129,9 @@ img {
 	background: linear-gradient(rgba(0,0,0,0.5),transparent), 
 	url("assets/images/banner-girl.png") center bottom no-repeat,
 	url("assets/images/flower-bkgd.jpg") center repeat-x;
-	background-size: cover, /*110px 235px*/ 150px 390px, cover;
+	background-size: cover, 25vh 60vh, cover;
 	position: relative;
-	min-height: 65vh;
+	min-height: 70vh;
 }
 
 .banner-text {
@@ -260,24 +258,6 @@ span {
 		background-size: cover;
 }
 
-/*PRODUCTS SECTION*/
-
-/*.popular-items{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 3rem;
-	padding-bottom: 5rem;
-}
-
-.product-roll {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-self: center;
-	text-align: center;
-}*/
 
 .item {
 	width: 100%;
@@ -392,9 +372,10 @@ flex-direction: column;
 }
 
 
-.hide{
+.media{
 	display: none;
 }
+
 li{
 	display: inline;
 	margin:1vh;
@@ -425,87 +406,26 @@ li{
 .google{
 	width: 20px;
 }
-/*.footer {
-	background-color: #262626;
-   color: white;
-   font-family: 'Playfair Display Web', serif;
-   padding-top: 3rem;
-   padding-bottom: 3rem;
-   margin-top: 0.8%;
-   width: 100%;
-}
-.contactUs {
-	padding: 6% 0%;
-	display: block;
-	clear: both;
-	width: 100%;
-	font-size: 1.6rem;
-}
-
-.contact, .phone {
-    margin-bottom: 1rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.phone a{
-	color: white;
-	text-decoration: none;
-}
-.address {
-    text-align: center;
-    vertical-align: middle;
-    color: #9e9e9e;
-}
-.social {
-    margin: auto;
-    width: 75%;
-    float: right;
-    padding-right: 4rem;
-    line-height: 150%;
-    font-family: 'Raleway', sans-serif;
-}
-
-.social span {
-	display:none;
-}
-
-.social ul {
-    display: flex;
-/*    text-align: center;
-    margin: auto;*/
-  /*  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-  align-items:center;
-  justify-content: center;
-}
-
-.social i {
-	padding: 0 1rem;
-	color: white;
-	font-size: 2rem;
-	text-align: center;
-	align-self: center;
-	transform: translateX(-7vw);
-}*/
 
 
 /*TABLET RESPONSIVENESS*/
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 601px){
 .header {
 	flex-wrap: nowrap;
 }
 
+
 .navbar {
-	margin-bottom: 0;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    transform: translate(31px);
 }
 
 .logo img {
-    max-width: 74%;
+    max-width: 135%;
     padding: 1.5rem;
 }
 
-.navbar {padding-top:1rem;}
 
 .navbar ul {
 	border:none;
@@ -514,23 +434,19 @@ li{
 .cart {order:3;}
 
 .cart img {
-    max-width: 22%;
-    margin-left: 67%;
+    max-width: 45%;
+    margin-left: 30%;
     padding-bottom: 1.5rem;
 }
 
 #cartQty {
 	top: 2px;
-	left: 0;
+	left: -22px;
 	width: 17px;
 	height: 17px;
 	padding-left: 5.5px;
 }
 
-.banner {
-    background-size: cover, 152px 86%, cover;
-    min-height: 65vh;
-}
 .banner-h2 {
     font-size: 5.6rem;
 }
@@ -587,6 +503,125 @@ li{
 	padding: 1.5%;
 }
 
+.social{
+	margin: 5vh;
+}
+#contact{
+	text-align: left;
+}
+.mail{
+	font-size: 1.25rem;
 }
 
-@media screen and (min-width: 1051px) and (max-width:1240px)
+.wrapper{
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.social ul {
+	text-align: initial;
+}
+
+.social li {
+      display: block;
+   }
+
+.media {
+      display: inline;
+   }
+
+
+}
+
+@media only screen and (min-width: 1240px){
+
+.container {
+      max-width: 1240px;
+}
+
+.logo img {
+    max-width: 60%;
+    padding: 1.5rem;
+}
+
+.navbar {
+    font-size: 2rem;
+}
+
+.cart img {
+    max-width: 20%;
+    margin-left: 70%;
+}
+
+#cartQty {
+    top: 2px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    padding-left: 6.5px;
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5),transparent), url("assets/images/banner-girl.png") center bottom no-repeat, url("assets/images/flower-bkgd.jpg") center repeat-x;
+    background-size: cover, 36vh 80vh, cover;
+    min-height: 93vh;
+}
+
+.banner-h1 {
+    font-size: 2.7rem;
+}
+.banner-h2 {
+    font-size: 7.6rem;
+}
+
+.h3-text {
+    font-size: 6rem;
+}
+
+.h3-text p {
+    font-size: 2.5rem;
+}
+
+.wide {
+    min-height: 55vh;
+}
+
+.square {
+    min-height: 55vh;
+}
+
+.category-name {
+    font-size: 4rem;
+    min-height: 52vh;
+}
+
+.popular-item {padding-bottom: 3rem;}
+.signup { min-height: 85vh;}
+
+.signup p {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.sub-Form {
+    padding: 0.6rem; }
+
+.email {
+	padding-top: 10px;
+    font-size: 2rem;
+}    
+
+.submitButton {
+    font-size: 1.78rem;}
+
+.footer {
+    min-height: 55vh;
+    font-size: 2.2rem;
+}
+
+#contact { padding-left: 4rem;}
+
+.social { padding-right: 4rem;}
+
+}
+
