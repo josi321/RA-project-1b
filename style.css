@@ -45,7 +45,11 @@ img {
 	flex-direction: row;
 	justify-content: space-between;
 	padding-top: 1rem;
-	padding-bottom: 0.2rem;
+	padding-bottom: 0;
+	position: fixed;
+	background-color: white;
+	z-index: 50;
+	width: 100%;
 }
 
 .logo {
@@ -129,9 +133,9 @@ img {
 	background: linear-gradient(rgba(0,0,0,0.5),transparent), 
 	url("assets/images/banner-girl.png") center bottom no-repeat,
 	url("assets/images/flower-bkgd.jpg") center repeat-x;
-	background-size: cover, 25vh 60vh, cover;
+	background-size: cover, 26vh 56vh, cover;
 	position: relative;
-	min-height: 70vh;
+	min-height: 80vh;
 }
 
 .banner-text {
@@ -142,15 +146,14 @@ img {
 }
 
 .banner-h1 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 11rem;
 }
 
 .banner-h2 {
-	font-family: 'Playfair display', serif;
-	font-size: 3.6rem;
-	margin-top: 0px;
-	/*line-height: 2;*/
+    font-family: 'Playfair display', serif;
+    font-size: 4rem;
 }
 
 /*CTA SECTION*/
@@ -544,7 +547,7 @@ li{
 
 .logo img {
     max-width: 60%;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 .navbar {
@@ -567,7 +570,7 @@ li{
 .banner {
     background: linear-gradient(rgba(0,0,0,0.5),transparent), url("assets/images/banner-girl.png") center bottom no-repeat, url("assets/images/flower-bkgd.jpg") center repeat-x;
     background-size: cover, 36vh 80vh, cover;
-    min-height: 93vh;
+    min-height: 110vh;
 }
 
 .banner-h1 {
