@@ -22,7 +22,14 @@ $(document).ready(function(){
   $(".addtocart").click(function(){ //shows the input for cart quantities
    $("#cartQty").show();
 })
-  
+
+  $("input.submitButton").on("click", function() {
+  	alert("Thanks for Subscribing!")
+  })
+
 });
+
+
+
 
 	
