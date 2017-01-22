@@ -412,6 +412,7 @@ li{
 @media only screen and (min-width: 601px){
 .header {
 	flex-wrap: nowrap;
+	padding-top: 3rem;
 }
 
 
@@ -419,6 +420,7 @@ li{
     padding-top: 1rem;
     margin-bottom: 0;
     transform: translate(31px);
+    font-size: 1.5rem;
 }
 
 .logo img {
@@ -434,9 +436,8 @@ li{
 .cart {order:3;}
 
 .cart img {
-    max-width: 45%;
-    margin-left: 30%;
-    padding-bottom: 1.5rem;
+    max-width: 41%;
+    margin-left: 42%;
 }
 
 #cartQty {
@@ -469,15 +470,17 @@ li{
 }
 
 .wide {
-    min-height: 36vh;
+    /*min-height: 36vh;*/
+    flex-basis: 50%;
 }
 
 .square{
-	min-height: 36vh;
+	/*min-height: 36vh;*/
+	flex-basis: 25%;
 }
 
 .category-name {
-	min-height: 33vh;
+	min-height: 20vh;
 }
 
 .owl-carousel {
