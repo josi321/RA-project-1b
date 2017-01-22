@@ -32,6 +32,10 @@ section {
 	font-family: 'Raleway', sans-serif;
 }
 
+img {
+   height: auto;
+   max-width: 100%;
+}
 
 /*HEADER*/
 
@@ -127,9 +131,9 @@ section {
 	background: linear-gradient(rgba(0,0,0,0.5),transparent), 
 	url("assets/images/banner-girl.png") center bottom no-repeat,
 	url("assets/images/flower-bkgd.jpg") center repeat-x;
-	background-size: cover, /*110px 235px*/ 150px 85%, cover;
+	background-size: cover, /*110px 235px*/ 150px 390px, cover;
 	position: relative;
-	min-height: 60vh;
+	min-height: 65vh;
 }
 
 .banner-text {
@@ -372,11 +376,59 @@ span {
 }
 
 /*FOOTER SECTION*/
-.footer {
+
+.footer{
+	background-color: #262626;
+	color: white;
+	min-height: 30vh;
+	font-family: 'Playfair Display Web', serif;
+	font-size: 1.6rem;
+	text-align: center;
+	padding-top: 6vh;
+}
+.wrapper { 
+display: flex;
+flex-direction: column;
+}
+
+
+.hide{
+	display: none;
+}
+li{
+	display: inline;
+	margin:1vh;
+}
+.social{
+	margin: 2vh;
+	text-decoration: none;
+}
+
+.social a {
+	color: white;
+}
+
+/*social*/
+
+.pinterest{
+	width: 20px;
+}
+.instagram{
+	width:20px;
+}
+.facebook{
+	width:20px;
+}
+.twitter{
+	width: 20px;
+}
+.google{
+	width: 20px;
+}
+/*.footer {
 	background-color: #262626;
    color: white;
    font-family: 'Playfair Display Web', serif;
-   /*padding: 4rem 0;*/
    padding-top: 3rem;
    padding-bottom: 3rem;
    margin-top: 0.8%;
@@ -422,7 +474,7 @@ span {
     display: flex;
 /*    text-align: center;
     margin: auto;*/
-    font-family: 'Raleway', sans-serif;
+  /*  font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   align-items:center;
   justify-content: center;
@@ -435,9 +487,11 @@ span {
 	text-align: center;
 	align-self: center;
 	transform: translateX(-7vw);
-}
+}*/
+
+
 /*TABLET RESPONSIVENESS*/
-@media only screen and (min-width: 601px) and (max-width: 1050px){
+@media only screen and (min-width: 600px){
 .header {
 	flex-wrap: nowrap;
 }
@@ -474,8 +528,8 @@ span {
 }
 
 .banner {
-	background-size: cover, 152px 86%, cover;
-    min-height: 35vh;
+    background-size: cover, 152px 86%, cover;
+    min-height: 65vh;
 }
 .banner-h2 {
     font-size: 5.6rem;
@@ -498,6 +552,18 @@ span {
     transform: translateY(43%);
 }
 
+.wide {
+    min-height: 36vh;
+}
+
+.square{
+	min-height: 36vh;
+}
+
+.category-name {
+	min-height: 33vh;
+}
+
 .owl-carousel {
     padding: 2rem 0; 
 }   
@@ -517,14 +583,10 @@ span {
 }
 
 .submitButton {
-font-size: 1.3rem;
-padding: 1.5%;}
-
-
+	font-size: 1.3rem;
+	padding: 1.5%;
+}
 
 }
 
-
-
-
-
+@media screen and (min-width: 1051px) and (max-width:1240px)
