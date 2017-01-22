@@ -440,16 +440,24 @@ li{
 
 .cart img {
     max-width: 41%;
-    margin-left: 42%;
+    margin-left: 50%;
 }
 
 #cartQty {
+    top: 2px;
+    left: -42px;
+    width: 23px;
+    height: 23px;
+    padding-left: 8.5px;
+}
+
+/*#cartQty {
 	top: 2px;
 	left: -22px;
 	width: 17px;
 	height: 17px;
 	padding-left: 5.5px;
-}
+}*/
 
 .banner-h2 {
     font-size: 5.6rem;
