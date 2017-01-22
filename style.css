@@ -76,7 +76,7 @@ img {
 
 .cart img {
 	max-width: 24%;
-	margin-left: 74%;
+	margin-left: 68%;
 	padding-bottom: 1rem;
 
 }
@@ -113,8 +113,8 @@ img {
 	border:none;
 	color: white;
 	position: absolute;
-	top:-1px;
-	left:10px;
+	top:2px;
+	left:4px;
 	width:15px;
 	height: 15px;
 	padding-left:4.4px;
@@ -424,13 +424,13 @@ li{
     margin-bottom: 0;
     transform: translate(31px);
     font-size: 1.5rem;
+   /* margin-left: 2.4rem;*/
 }
 
 .logo img {
     max-width: 135%;
-    padding: 1.5rem;
+   /* padding: 1.5rem;*/
 }
-
 
 .navbar ul {
 	border:none;
@@ -439,25 +439,19 @@ li{
 .cart {order:3;}
 
 .cart img {
-    max-width: 41%;
+    max-width: 50%;
     margin-left: 50%;
+    padding-bottom: 2rem;
 }
+
 
 #cartQty {
-    top: 2px;
-    left: -10px;
-    width: 23px;
-    height: 23px;
-    padding-left: 8.5px;
+    top: -1px;
+    left: -12px;
+    width: 18px;
+    height: 18px;
+    padding-left: 6.5px;
 }
-
-/*#cartQty {
-	top: 2px;
-	left: -22px;
-	width: 17px;
-	height: 17px;
-	padding-left: 5.5px;
-}*/
 
 .banner-h2 {
     font-size: 5.6rem;
@@ -610,7 +604,8 @@ li{
 }
 
 .popular-item {padding-bottom: 3rem;}
-.signup { min-height: 85vh;}
+
+.signup { min-height: 50vh;}
 
 .signup p {
     font-size: 2.5rem;
@@ -629,7 +624,7 @@ li{
     font-size: 1.78rem;}
 
 .footer {
-    min-height: 55vh;
+    min-height: 37vh;
     font-size: 2.2rem;
 }
 
